@@ -1,0 +1,11 @@
+#version_1
+
+THIS IS BOM OF PCB. Classify by category, specification, reference, and quantity. Properly distinguish between beads and inductors. Convert it to a format that can be used in Excel files. The order is first capacitor, second resistor, in ascending order of strength. Add each classified category name to the column. Just give me the data without any explanation.
+
+
+
+
+#version_2
+#NC 삭제, 0이나 0R 합침, TP, MT 삭제
+
+THIS IS BOM OF PCB. Classify by category, specification, reference, and quantity. Properly distinguish between beads and inductors. Convert it to a format that can be used in Excel files. The order is first capacitor, second resistor, in ascending order of strength. Add each classified category name to the column. Just give me the data without any explanation. And if NC is in the name, they are treated as the same, and remove R from the resistance specification and combine the numbers if they are the same. If TP or MT is included in the specification or reference, delete that part.
