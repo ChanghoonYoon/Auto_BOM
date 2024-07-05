@@ -9,3 +9,15 @@ THIS IS BOM OF PCB. Classify by category, specification, reference, and quantity
 #NC 삭제, 0이나 0R 합침, TP, MT 삭제
 
 THIS IS BOM OF PCB. Classify by category, specification, reference, and quantity. Properly distinguish between beads and inductors. Convert it to a format that can be used in Excel files. The order is first capacitor, second resistor, in ascending order of strength. Add each classified category name to the column. Just give me the data without any explanation. And if NC is in the name, they are treated as the same, and remove R from the resistance specification and combine the numbers if they are the same. If TP or MT is included in the specification or reference, delete that part.
+
+
+#version_3
+#R 제거 및 합치기, 
+THIS IS BOM OF PCB. Classify by category, specification, reference, and quantity. Properly distinguish between beads and inductors. Convert it to a format that can be used in Excel files. The order is first capacitor, second resistor, in ascending order of strength. Add each classified category name to the column. Just give me the data without any explanation. If NC is in the name, they are treated as the same. Remove R from the resistance specification. combine resistance specification if they are the same. But don't delete the R in the reference. If TP or MT is included in the specification or reference, delete that part.
+
+#Version_4
+#예외사항 적용 및 R제거 및 합치기, TP제거
+THIS IS BOM OF PCB. Classify by category, specification, reference, and quantity. Properly distinguish between beads and inductors. Convert it to a format that can be used in Excel files. The order is first capacitor, second resistor, in ascending order of strength. Add each classified category name to the column. Just give me the data without any explanation. And if NC is in the name, they are treated as the same. Remove R from the resistor specification and combine the numbers if they are equal. As an exception, removing R from references is prohibited. If TP or MT is included in the specification or reference, delete that part.
+
+#Version_6
+#최근 프롬프트를 활용하지 않는 방안에 대해서, 논의 중 성공. 더이상 프롬프트 일시정지.
