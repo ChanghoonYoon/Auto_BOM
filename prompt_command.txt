@@ -21,3 +21,7 @@ THIS IS BOM OF PCB. Classify by category, specification, reference, and quantity
 
 #Version_6
 #최근 프롬프트를 활용하지 않는 방안에 대해서, 논의 중 성공. 더이상 프롬프트 일시정지.
+
+#version_7
+#계속사용
+
